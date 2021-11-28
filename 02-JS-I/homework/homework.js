@@ -73,7 +73,9 @@ function divide(x, y) {
 function sonIguales(x, y) {
   if (x === y){
     return true;
-  } return false;
+  } 
+    return false;
+
 
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
@@ -87,11 +89,11 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
-  if (str1.length == str2.length) {
+  if (str1.length === str2.length) {
     return true;
   }
 
-  return false;
+    return false;
 }
 
 
@@ -232,16 +234,16 @@ function numeroRandom() {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
 
-    var estado = Math.sign(numero);
-    
-    if(estado===1){
-      return 'Numero positivo';
-    }
-    if(estado===-1){
-      return 'Numero negativo'
-    }
-    return false; 
+  if(numero === 0) {
+    return false;
   }
+  else if(numero > 0) {
+    return "Es positivo";
+  }
+  else {
+    return "Es negativo";
+  }
+}
   
 
   function agregarSimboloExclamacion(str) {
@@ -320,12 +322,15 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  var vocales
-  
-  if (letra == )
-  
-}
+  if(letra.length > 1){
+    return "Dato incorrecto"
+  }
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
+  }
+  return "Dato incorrecto"
 
+}
 
 
 // No modificar nada debajo de esta línea
